@@ -5,11 +5,11 @@
 <!--Instagram logo -->
             <h1 span class="instagram" style="font-family: 'Oswald', sans-serif;"> instagram </h1 span>
 <!-- Create Post button -->     
-                <div class="ml-auto d-flex" role="toolbar" aria-label="Toolbar with button groups" data-toggle="modal" data-target="#myModal">
+                <div class="ml-auto d-flex" role="toolbar" aria-label="Toolbar with button groups">
                 <div class="col px-md-5">
-                    <a href="#" class="btn btn-md btn-success mr-2" role="group" aria-pressed="true" aria-label="First group">Create a new post</a>
+                    <a href="#myModal" class="btn btn-md btn-success mr-2" role="group" aria-pressed="true" aria-label="First group" data-toggle="modal" data-target="#myModal">Create a new post</a>
 <!-- Modal Content Message -->
-                <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal fade" id="myModal" role="dialog" data-backdrop="false">
                         <div class="modal-dialog modal-lg">
                             <div class="modal-content">
                                 <div class="modal-body">
@@ -49,14 +49,14 @@
 </div>
 <!-- NavBar Ends-->
 <!-- Navs Bar-->
-<ul class="nav justify-content-center nav-pills mt-3 mb-3" role="tablist">
+<ul class="nav justify-content-center nav-pills mt-2 mb-2" role="tablist">
   <li class="nav-item" role="presentation">
     <a class="nav-link active bg-secondary" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
      <i class="fas fa-th"></i>
     </a>
   </li>
    <li class="nav-item">
-    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
+    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="true">
      <i class="fas fa-square text-secondary"></i>
     </a>
   </li>
@@ -116,59 +116,65 @@
 		</div>
   </div>
 <!-- Single Row IG photos -->  
-    <div class="tab-pane fade mt-5" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" style="background-color: #eee;">
-        <div class="container bg-white mb-5">
-            <div class="d-flex bd-highlight bg-white">
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" style="background-color: #eee;">
+        <div class="container p-5">
+            <div class="card">
+                <div class="d-flex bd-highlight bg-white">
                 <div class="p-2 w-100 bd-highlight">My First Photo</div>
                 <div class="p-2 flex-shrink-1 bd-highlight">12/24/2020</div>
             </div>
-            <div class="text-center bg-white">
-                <img class="mw-100" src="https://seaniverson.com/wp-content/uploads/2017/05/1pxacu.jpg" alt="Responsive image">
+                <div class="card-body text-center bg-white">
+                    <img class="mw-100" src="https://seaniverson.com/wp-content/uploads/2017/05/1pxacu.jpg" alt="Responsive image">
+                </div>
+                <div class="container bg-white">
+                    <p class="text-left font-weight-bold">24 Likes </p>
+                    <p class="text-left"> This is my first stab at a bootstrap IG photo feed project. I can honestly say I enjoy it more than CSS and HTML but I know that I that JAVASCRIPT will only enhance my web skills.</p>
+                </div>
+                <div class="d-flex bd-highlight bg-white">
+                    <div class="p-2 w-100 bd-highlight"> <br> <i class="fas fa-heart"></i> Comments ..... </div>
+                    <div class="p-2 flex-shrink-1 bd-highlight"><i class="fas fa-ellipsis-v"></i></div>
+                </div>
             </div>
-            <div class="container bg-white">
-                <p class="text-left font-weight-bold">24 Likes </p>
-                <p class="text-left"> This is my first stab at a bootstrap IG photo feed project. I can honestly say I enjoy it more than CSS and HTML but I know that I that JAVASCRIPT will only enhance my web skills.</p>
-            </div>
-            <div class="d-flex bd-highlight bg-white">
-                 <div class="p-2 w-100 bd-highlight"> <i class="fas fa-heart"></i> Comments ..... </div>
-                 <div class="p-2 flex-shrink-1 bd-highlight"><i class="fas fa-ellipsis-v"></i></div>
-            </div>
-        </div>
+        </div>    
  <!--Second Photo-->
-        <div class="container bg-white mb-5">
-            <div class="d-flex bd-highlight bg-white">
+        <div class="container p-5">
+            <div class="card">
+                <div class="d-flex bd-highlight bg-white">
                 <div class="p-2 w-100 bd-highlight">My First Photo</div>
                 <div class="p-2 flex-shrink-1 bd-highlight">12/24/2020</div>
             </div>
-            <div class="text-center bg-white">
-                <img src="https://seaniverson.com/wp-content/uploads/2017/05/1pxacu.jpg" class="img-fluid" alt="Responsive image">>
+                <div class="card-body text-center bg-white">
+                    <img class="mw-100" src="https://seaniverson.com/wp-content/uploads/2017/05/1pxacu.jpg" alt="Responsive image">
+                </div>
+                <div class="container bg-white">
+                    <p class="text-left font-weight-bold">24 Likes </p>
+                    <p class="text-left"> This is my first stab at a bootstrap IG photo feed project. I can honestly say I enjoy it more than CSS and HTML but I know that I that JAVASCRIPT will only enhance my web skills.</p>
+                </div>
+                <div class="d-flex bd-highlight bg-white">
+                    <div class="p-2 w-100 bd-highlight"> <br> <i class="fas fa-heart"></i> Comments ..... </div>
+                    <div class="p-2 flex-shrink-1 bd-highlight"><i class="fas fa-ellipsis-v"></i></div>
+                </div>
             </div>
-            <div class="container bg-white">
-                <p class="text-left font-weight-bold">24 Likes </p>
-                <p class="text-left"> This is my first stab at a bootstrap IG photo feed project. I can honestly say I enjoy it more than CSS and HTML but I know that I that JAVASCRIPT will only enhance my web skills.</p>
-            </div>
-            <div class="d-flex bd-highlight bg-white">
-                 <div class="p-2 w-100 bd-highlight"> <i class="fas fa-heart"></i> Comments ..... </div>
-                 <div class="p-2 flex-shrink-1 bd-highlight"><i class="fas fa-ellipsis-v"></i></div>
-            </div>
-        </div>
+        </div>    
  <!--Third Photo-->
-     <div class="container bg-white mb-5">
-            <div class="d-flex bd-highlight bg-white">
+     <div class="container p-5">
+            <div class="card">
+                <div class="d-flex bd-highlight bg-white">
                 <div class="p-2 w-100 bd-highlight">My First Photo</div>
                 <div class="p-2 flex-shrink-1 bd-highlight">12/24/2020</div>
             </div>
-            <div class="text-center bg-white">
-                <img src="https://seaniverson.com/wp-content/uploads/2017/05/1pxacu.jpg" class="img-fluid" alt="Responsive image">>
+                <div class="card-body text-center bg-white">
+                    <img class="mw-100" src="https://seaniverson.com/wp-content/uploads/2017/05/1pxacu.jpg" alt="Responsive image">
+                </div>
+                <div class="container bg-white">
+                    <p class="text-left font-weight-bold">24 Likes </p>
+                    <p class="text-left"> This is my first stab at a bootstrap IG photo feed project. I can honestly say I enjoy it more than CSS and HTML but I know that I that JAVASCRIPT will only enhance my web skills.</p>
+                </div>
+                <div class="d-flex bd-highlight bg-white">
+                    <div class="p-2 w-100 bd-highlight"> <br> <i class="fas fa-heart"></i> Comments ..... </div>
+                    <div class="p-2 flex-shrink-1 bd-highlight"><i class="fas fa-ellipsis-v"></i></div>
+                </div>
             </div>
-            <div class="container bg-white">
-                <p class="text-left font-weight-bold">24 Likes </p>
-                <p class="text-left"> This is my first stab at a bootstrap IG photo feed project. I can honestly say I enjoy it more than CSS and HTML but I know that I that JAVASCRIPT will only enhance my web skills.</p>
-            </div>
-            <div class="d-flex bd-highlight bg-white">
-                 <div class="p-2 w-100 bd-highlight"> <i class="fas fa-heart"></i> Comments ..... </div>
-                 <div class="p-2 flex-shrink-1 bd-highlight"><i class="fas fa-ellipsis-v"></i></div>
-            </div>
-        </div>
+        </div>    
      </div>
   </div>
