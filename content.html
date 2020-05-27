@@ -34,7 +34,7 @@
                         <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="fas fa-cog"></i>
                         </button>
-                        <div class="dropdown-menu">
+                        <div class="dropdown-menu dropdown-menu-right">
                             <a class="dropdown-item" href="#">Action</a>
                             <a class="dropdown-item" href="#">Another action</a>
                             <a class="dropdown-item" href="#">Something else here</a>
@@ -49,15 +49,15 @@
 </div>
 <!-- NavBar Ends-->
 <!-- Navs Bar-->
-<ul class="nav justify-content-center nav-pills mt-2 mb-2" role="tablist">
+<ul class="nav justify-content-center nav-pills mt-2 mb-2" role="tablist" id="pills-tabs">
   <li class="nav-item" role="presentation">
-    <a class="nav-link active bg-secondary" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
+    <a class="nav-link show active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
      <i class="fas fa-th"></i>
     </a>
   </li>
    <li class="nav-item">
     <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="true">
-     <i class="fas fa-square text-secondary"></i>
+     <i class="fas fa-square"></i>
     </a>
   </li>
 </ul>
@@ -118,12 +118,12 @@
   </div>
 <!-- Single Row IG photos -->  
     <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" style="background-color: #eee;">
-        <div class="container p-5">
+        <div class="container p-4">
             <div class="card">
-                <div class="d-flex bd-highlight bg-white">
-                <div class="p-2 w-100 bd-highlight">My First Photo</div>
-                <div class="p-2 flex-shrink-1 bd-highlight">12/24/2020</div>
-            </div>
+                <div class="card-header d-flex border-0 bg-white">
+                    <div class="p-2 w-100 bd-highlight">My First Photo</div>
+                    <div class="p-2 flex-shrink-1 bd-highlight">05/24/2020</div>
+                </div>
                 <div class="card-body text-center bg-white">
                     <img class="mw-100" src="https://www.telegraph.co.uk/content/dam/Travel/Destinations/Europe/Netherlands/Amsterdam/amsterdam-dusk-lead-image-guide.jpg" alt="Responsive image">
                 </div>
@@ -131,19 +131,19 @@
                     <p class="text-left font-weight-bold">24 Likes </p>
                     <p class="text-left"> This is my first stab at a bootstrap IG photo feed project. I can honestly say I enjoy it more than CSS and HTML but I know that I that JAVASCRIPT will only enhance my web skills.</p>
                 </div>
-                <div class="d-flex bd-highlight bg-white">
+                <div class="card-footer d-flex border-0 bg-white">
                     <div class="p-2 w-100 bd-highlight"><i class="fas fa-heart"></i> Comments ..... </div>
                     <div class="p-2 flex-shrink-1 bd-highlight"><i class="fas fa-ellipsis-v"></i></div>
                 </div>
             </div>
         </div>    
  <!--Second Photo-->
-        <div class="container p-5">
+        <div class="container p-4">
             <div class="card">
-                <div class="d-flex bd-highlight bg-white">
-                <div class="p-2 w-100 bd-highlight">My First Photo</div>
-                <div class="p-2 flex-shrink-1 bd-highlight">12/24/2020</div>
-            </div>
+                <div class="card-header d-flex border-0 bg-white">
+                    <div class="p-2 w-100 bd-highlight">My Second Photo</div>
+                    <div class="p-2 flex-shrink-1 bd-highlight">05/24/2020</div>
+                </div>
                 <div class="card-body text-center bg-white">
                     <img class="mw-100" src="https://iobint.com/wp-content/uploads/2017/12/F027BDFE-5B8D-438E-B34C-B6DD883764AFIndonesia.jpg" alt="Responsive image">
                 </div>
@@ -151,19 +151,19 @@
                     <p class="text-left font-weight-bold">24 Likes </p>
                     <p class="text-left"> This is my first stab at a bootstrap IG photo feed project. I can honestly say I enjoy it more than CSS and HTML but I know that I that JAVASCRIPT will only enhance my web skills.</p>
                 </div>
-                <div class="d-flex bd-highlight bg-white">
+                <div class="card-footer d-flex border-0 bg-white">
                     <div class="p-2 w-100 bd-highlight"><i class="fas fa-heart"></i> Comments ..... </div>
                     <div class="p-2 flex-shrink-1 bd-highlight"><i class="fas fa-ellipsis-v"></i></div>
                 </div>
             </div>
         </div>    
- <!--First Video-->
-     <div class="container p-5">
+ <!--First Video Content-->
+     <div class="container p-4">
             <div class="card">
-                <div class="d-flex bd-highlight bg-white">
-                <div class="p-2 w-100 bd-highlight">My First Photo</div>
-                <div class="p-2 flex-shrink-1 bd-highlight">12/24/2020</div>
-            </div>
+                <div class="card-header d-flex border-0 bg-white">
+                    <div class="p-2 w-100 bd-highlight">My First GIF</div>
+                    <div class="p-2 flex-shrink-1 bd-highlight">05/25/2020</div>
+                </div>
                 <div class="card-body text-center bg-white">
                     <div class="embed-responsive embed-responsive-16by9">
                          <iframe width="560" height="315" src="https://giphy.com/embed/aZg5FJVAHdB3G" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -173,39 +173,41 @@
                     <p class="text-left font-weight-bold">24 Likes</p>
                     <p class="text-left"> This is my first stab at a bootstrap IG photo feed project. I can honestly say I enjoy it more than CSS and HTML but I know that I that JAVASCRIPT will only enhance my web skills.</p>
                 </div>
-                <div class="d-flex bd-highlight bg-white">
+                <div class="card-footer d-flex border-0 bg-white">
                     <div class="p-2 w-100 bd-highlight"><i class="fas fa-heart"></i> Comments ..... </div>
                     <div class="p-2 flex-shrink-1 bd-highlight"><i class="fas fa-ellipsis-v"></i></div>
                 </div>
             </div>
         </div>   
-<!--Third Photo-->
-    <div class="container p-5">
+<!--Second Video Content-->
+    <div class="container p-4">
             <div class="card">
-                <div class="d-flex bd-highlight bg-white">
-                <div class="p-2 w-100 bd-highlight">My First Photo</div>
-                <div class="p-2 flex-shrink-1 bd-highlight">12/24/2020</div>
-            </div>
+                <div class="card-header d-flex border-0 bg-white">
+                    <div class="p-2 w-100 bd-highlight">My First Video</div>
+                    <div class="p-2 flex-shrink-1 bd-highlight">05/26/2020</div>
+                </div>
                 <div class="card-body text-center bg-white">
-                    <img class="mw-100" src="https://news.bitcoin.com/wp-content/uploads/2019/01/dubai-crypto-valley.jpg" alt="Responsive image">
+                    <div class="embed-responsive embed-responsive-16by9">
+                         <iframe width="560" height="315" src="https://www.youtube.com/embed/-xFB2vQknEQ?start=2" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
                 </div>
                 <div class="container bg-white">
                     <p class="text-left font-weight-bold">24 Likes </p>
                     <p class="text-left"> This is my first stab at a bootstrap IG photo feed project. I can honestly say I enjoy it more than CSS and HTML but I know that I that JAVASCRIPT will only enhance my web skills.</p>
                 </div>
-                <div class="d-flex bd-highlight bg-white">
+                <div class="card-footer d-flex border-0 bg-white">
                     <div class="p-2 w-100 bd-highlight"><i class="fas fa-heart"></i> Comments ..... </div>
                     <div class="p-2 flex-shrink-1 bd-highlight"><i class="fas fa-ellipsis-v"></i></div>
                 </div>
             </div>
         </div>   
 <!--Fourth Photo-->
-    <div class="container p-5">
+    <div class="container p-4">
             <div class="card">
-                <div class="d-flex bd-highlight bg-white">
-                <div class="p-2 w-100 bd-highlight">My First Photo</div>
-                <div class="p-2 flex-shrink-1 bd-highlight">12/24/2020</div>
-            </div>
+                <div class="card-header d-flex border-0 bg-white">
+                    <div class="p-2 w-100 bd-highlight">My Last Photo</div>
+                    <div class="p-2 flex-shrink-1 bd-highlight">05/26/2020</div>
+                </div>
                 <div class="card-body text-center bg-white">
                     <img class="mw-100" src="https://www.keteka.com/wp-content/uploads/2016/04/Middle_of_the_World4-720x540.jpg" alt="Responsive image">
                 </div>
@@ -213,7 +215,7 @@
                     <p class="text-left font-weight-bold">24 Likes </p>
                     <p class="text-left"> This is my first stab at a bootstrap IG photo feed project. I can honestly say I enjoy it more than CSS and HTML but I know that I that JAVASCRIPT will only enhance my web skills.</p>
                 </div>
-                <div class="d-flex bd-highlight bg-white">
+                <div class="card-footer d-flex border-0 bg-white">
                     <div class="p-2 w-100 bd-highlight"><i class="fas fa-heart"></i> Comments ..... </div>
                     <div class="p-2 flex-shrink-1 bd-highlight"><i class="fas fa-ellipsis-v"></i></div>
                 </div>

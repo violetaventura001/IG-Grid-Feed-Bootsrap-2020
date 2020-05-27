@@ -1,0 +1,13 @@
+.nav-pills .nav-link.active {
+    background-color: gray;
+    color: white;
+}
+.nav-pills .nav-link {
+    color: rgb(97, 94, 94);
+}
+.instagram {
+    font-size: 35px;
+}
+.card-header {
+    font-size: 25px;
+}
